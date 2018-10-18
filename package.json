@@ -1,0 +1,42 @@
+{
+  "name": "btclass",
+  "version": "1.0.0",
+  "description": "A btclass Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.btclass.www",
+    "dmg": {
+      "window": {
+        "x": 100,
+        "y": 100,
+        "width": 1366,
+        "height": 800
+      }
+    },
+    "win": {
+      "icon": "res/icon.ico"
+    },
+    "mac": {
+      "icon": "res/icon.icns"
+    }
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-builder": "^20.24.4"
+  }
+}
